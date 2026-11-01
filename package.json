@@ -1,0 +1,15 @@
+{
+  "name": "transcript-shelf",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Chrome extension: copy YouTube transcripts into one clean, LLM-ready block.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test",
+    "pack": "git archive --format=zip -o transcript-shelf.zip HEAD manifest.json src icons"
+  }
+}

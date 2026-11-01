@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <title>Transcript Shelf</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="top">
+      <header class="topbar">
+        <div class="brand">
+          <span class="mark" aria-hidden="true"></span>
+          <span class="wordmark">Transcript Shelf</span>
+        </div>
+        <button
+          id="settingsButton"
+          class="icon-button"
+          type="button"
+          aria-label="Formatting options"
+          aria-expanded="false"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h9M19 7h1M4 17h3M13 17h7" />
+            <circle cx="16" cy="7" r="2.2" />
+            <circle cx="10" cy="17" r="2.2" />
+          </svg>
+        </button>
+      </header>
+
+      <section id="options" class="options" hidden>
+        <div class="presets" role="group" aria-label="Preset">
+          <button class="chip" type="button" data-preset="markdown">Markdown</button>
+          <button class="chip" type="button" data-preset="plain">Plain</button>
+          <button class="chip" type="button" data-preset="custom" disabled>Custom</button>
+        </div>
+
+        <div id="fields" class="fields"></div>
+
+        <div class="themes" role="group" aria-label="Theme">
+          <button class="chip" type="button" data-theme="auto">Auto</button>
+          <button class="chip" type="button" data-theme="light">Light</button>
+          <button class="chip" type="button" data-theme="dark">Dark</button>
+        </div>
+      </section>
+    </div>
+
+    <main>
+      <section id="current" class="card current" hidden>
+        <p class="eyebrow">Now playing</p>
+        <h1 id="currentTitle">…</h1>
+        <p id="currentMeta" class="meta"></p>
+        <div class="row">
+          <button id="copyButton" class="button primary" type="button">Copy transcript</button>
+          <button id="addButton" class="button" type="button">Add</button>
+        </div>
+      </section>
+
+      <section class="shelf">
+        <div class="section-head">
+          <h2>Transcripts <span id="count" class="count"></span></h2>
+          <button id="copyAllButton" class="text-button" type="button">Copy all</button>
+        </div>
+
+        <ol id="list" class="list"></ol>
+        <p id="empty" class="empty">Nothing saved yet. Open a video and press Add.</p>
+
+        <div id="shelfTools" class="row" hidden>
+          <button id="exportButton" class="button small" type="button">Export .txt</button>
+          <button id="clearButton" class="text-button danger" type="button">Clear all</button>
+        </div>
+      </section>
+
+      <p id="status" class="status" role="status"></p>
+      <button id="debugButton" class="text-button" type="button" hidden>Copy debug info</button>
+    </main>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

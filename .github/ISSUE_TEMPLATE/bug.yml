@@ -1,0 +1,39 @@
+name: Bug report
+description: Something went wrong while copying or saving a transcript.
+title: "[bug] "
+labels: [bug]
+body:
+  - type: input
+    id: chrome
+    attributes:
+      label: Chrome version
+      placeholder: e.g. 131.0.6778.86
+    validations:
+      required: true
+
+  - type: input
+    id: video
+    attributes:
+      label: Video URL
+      description: The page where it happened.
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you expected, and what the popup said.
+    validations:
+      required: true
+
+  - type: textarea
+    id: debug
+    attributes:
+      label: Debug info
+      description: >
+        Press "Copy debug info" in the popup and paste it here. It contains up
+        to 240 characters of transcript text, so remove anything you would
+        rather not share.
+    validations:
+      required: false

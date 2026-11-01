@@ -1,0 +1,9 @@
+.DS_Store
+Thumbs.db
+node_modules/
+*.zip
+*.log
+.vscode/
+
+# local setup script: useful on my machine, noise in the repo
+publish.bat

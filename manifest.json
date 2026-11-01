@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Transcript Shelf",
+  "short_name": "Shelf",
+  "version": "1.0.0",
+  "description": "Copy the transcript of the open YouTube video, collect several, paste into any LLM. No network requests.",
+  "homepage_url": "https://github.com/goktwoxd/transcript-shelf",
+  "minimum_chrome_version": "114",
+  "permissions": ["activeTab", "storage", "scripting", "clipboardWrite"],
+  "action": {
+    "default_title": "Transcript Shelf",
+    "default_popup": "src/ui/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
