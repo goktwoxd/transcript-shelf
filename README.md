@@ -19,9 +19,9 @@ plain text, and collect several into one block for your notes or an LLM.
 
 ## Install
 
-1. Clone or download this folder.
+1. Download `transcript-shelf-v1.0.0.zip` from [Releases](https://github.com/goktwoxd/transcript-shelf/releases/latest) and unzip it.
 2. Open `chrome://extensions` and turn on **Developer mode**.
-3. **Load unpacked**, pick the folder, pin the icon.
+3. **Load unpacked**, pick the unzipped folder, pin the icon.
 
 ## Use
 
