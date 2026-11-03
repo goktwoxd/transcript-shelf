@@ -86,9 +86,9 @@ including `ytInitialPlayerResponse` is undefined. The reader walks the
 transcript list, which may only be rendered around the viewport, merges what
 each window showed, and puts the scroll back.
 
-Permissions are `activeTab`, `storage`, `scripting`, `clipboardWrite`. No host
-permission is requested: Chrome hands over the tab you clicked from, for that
-tab only.
+Permissions are `storage`, `scripting`, `clipboardWrite`, plus host access to
+`https://*.youtube.com/*`. The extension can read and change pages only on
+YouTube; every other site is out of scope.
 
 ## Development
 

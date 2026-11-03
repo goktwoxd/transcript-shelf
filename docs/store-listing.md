@@ -9,7 +9,7 @@ Copy for the dashboard, plus the answers it asks for. Last checked 2026-11-01.
   collect several, paste into any LLM. No network requests.
 - **Category:** Productivity → Tools
 - **Language:** English
-- **Version:** 1.0.0
+- **Version:** 1.0.1
 
 "YouTube" does not appear in the name, and never should: the branding rules
 forbid it in an app name while allowing a description to say what the app works
@@ -56,8 +56,8 @@ collect several transcripts into one block for reuse.
 
 ## Permission justifications
 
-- **`activeTab`** — the extension only acts on the tab the user clicked from.
-  This is how the page reads are scoped; there is no host permission.
+- **`https://*.youtube.com/*`** — the only site the extension can read or
+  change. The page reads and the popup are scoped to YouTube.
 - **`storage`** — saves the transcript shelf and the formatting options in
   `chrome.storage.local`. Nothing is transmitted.
 - **`scripting`** — reads the transcript panel and, when it is closed, opens it

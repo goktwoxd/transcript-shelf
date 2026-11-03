@@ -107,7 +107,8 @@ async function paintCurrent() {
   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
   const url = tab?.url ?? '';
 
-  // activeTab grants this one tab; anything outside youtube.com is out of scope.
+  // The youtube.com host permission is what exposes this tab's URL. Anything
+  // outside YouTube is out of scope.
   if (!isYouTube(url)) {
     return;
   }

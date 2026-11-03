@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.1 — 2026-11-03
+
+- Ask for `https://*.youtube.com/*` instead of `activeTab`, so Chrome lists
+  YouTube as the only site the extension can read and change. The extension
+  page no longer shows an all-sites toggle.
+
 ## 1.0.0 — 2026-11-01
 
 First public release.
